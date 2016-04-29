@@ -17,3 +17,19 @@ parameters:
 
     # A secret key that's used to generate certain security-related tokens
     secret:            ThisTokenIsNotSoSecretChangeIt
+
+    mongo_server: mongodb://localhost:27017
+    mongo_database: autoria
+
+    auto_ria_api_host: http://api.auto.ria.com
+    auto_ria_categories_endpoint: /categories
+    auto_ria_bodystyles_endpoint: /bodystyles/_group
+    auto_ria_marks_endpoint: /marks
+    auto_ria_models_endpoint: /models/_group
+    auto_ria_api_gearboxes_endpoint: /gearboxes
+    auto_ria_api_driver_types_endpoint: /driverTypes
+    auto_ria_api_options_endpoint: /options
+    auto_ria_states_endpoint: /states
+    auto_ria_api_cities_endpoint: /cities
+    auto_ria_api_fuels_endpoint: /fuels
+    auto_ria_api_colors_endpoint: /colors

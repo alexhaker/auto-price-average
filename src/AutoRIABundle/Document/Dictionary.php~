@@ -1,0 +1,25 @@
+<?php
+namespace AppBundle\Document;
+
+use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
+
+/**
+ * @MongoDB\Document
+ * @MongoDB\InheritanceType("COLLECTION_PER_CLASS")
+ */
+class Dictionary {
+	/**
+	 * @MongoDB\Id
+	 */
+	protected $id;
+
+	/**
+	 * @MongoDB\String
+	 */
+	protected $name;
+
+	/**
+	 * @MongoDB\Int
+	 */
+	protected $value;
+}

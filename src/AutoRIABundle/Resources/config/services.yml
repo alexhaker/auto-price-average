@@ -1,0 +1,8 @@
+services:
+  auto_ria_client:
+    class: AutoRIABundle\Service\AutoRIAClient
+    arguments:
+      - '%auto_ria.api%'
+      - @buzz
+      - @logger
+      - @doctrine_mongodb

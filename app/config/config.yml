@@ -64,3 +64,44 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+doctrine_mongodb:
+    connections:
+        default:
+            server: "%mongo_server%"
+            options: {}
+    default_database: "%mongo_database%"
+    document_managers:
+        default:
+            auto_mapping: true
+
+auto_ria:
+    api:
+      host: "%auto_ria_api_host%"
+      dictionaries_endpoints:
+        categories:
+          self: "%auto_ria_categories_endpoint%"
+          bodystyles: "%auto_ria_bodystyles_endpoint%"
+          marks:
+            self: "%auto_ria_marks_endpoint%"
+            models: "%auto_ria_models_endpoint%"
+          gearboxes: "%auto_ria_api_gearboxes_endpoint%"
+          driver_types: "%auto_ria_api_driver_types_endpoint%"
+          options: "%auto_ria_api_options_endpoint%"
+        states:
+          self: "%auto_ria_states_endpoint%"
+          cities: "%auto_ria_api_cities_endpoint%"
+        fuels: "%auto_ria_api_fuels_endpoint%"
+        colors: "%auto_ria_api_colors_endpoint%"
+      model_mapping:
+        categories: Category
+        bodystyles: BodyStyle
+        marks: Brand
+        models: Model
+        gearboxes: Gearbox
+        driver_types: DriverType
+        options: Option
+        states: Region
+        cities: City
+        fuels: FuelType
+        colors: Color
